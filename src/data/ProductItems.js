@@ -10,6 +10,8 @@ import OfficeChair from "../assets/models/OfficeChair.glb";
 import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import pot from "../assets/models/pot.glb";
 import potUsdz from "../assets/models/pot.usdz";
+import cupBoard from "../assets/models/CupBoard.glb";
+import cupBoardUsdz from "../assets/models/CupBoard.usdz";
 
 const productItems = [
   {
@@ -65,8 +67,8 @@ const productItems = [
   {
     id: 3,
     name: "pot",
-    modelSrc: pot,
-    iOSSrc: potUsdz,
+    modelSrc: cupBoard,
+    iOSSrc: cupBoardUsdz,
     category: "Environment",
     color: "Red",
     annotations: [
