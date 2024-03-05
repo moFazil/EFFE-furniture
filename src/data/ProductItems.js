@@ -8,10 +8,10 @@ import car1 from "../assets/models/Car1.glb";
 import ioscar1 from "../assets/models/Car1.usdz";
 import OfficeChair from "../assets/models/OfficeChair.glb";
 import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
-import pot from "../assets/models/pot.glb";
-import potUsdz from "../assets/models/pot.usdz";
-import cupBoard from "../assets/models/CupBoard.glb";
-import cupBoardUsdz from "../assets/models/CupBoard.usdz";
+// import pot from "../assets/models/pot.glb";
+// import potUsdz from "../assets/models/pot.usdz";
+import cupBoard from "../assets/models/Table with texture.glb";
+import cupBoardUsdz from "../assets/models/Table with texture.usdz";
 
 const productItems = [
   {
