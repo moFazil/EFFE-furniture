@@ -92,7 +92,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
         alt="A 3D model"
         ar
         ar-modes="webxr scene-viewer quick-look"
-        camera-controls
         auto-rotate
 
       >
