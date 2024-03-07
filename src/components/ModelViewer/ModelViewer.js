@@ -3,7 +3,7 @@ import LazyLoad from "react-lazyload";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
+const ModelViewer = ({ item}) => {
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
   const [annotate, setAnnotate] = useState(false);
@@ -92,8 +92,8 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
         alt="A 3D model"
         ar
         ar-modes="webxr scene-viewer quick-look"
+        camera-controls
         auto-rotate
-
       >
 
         {ARSupported && (
@@ -166,22 +166,8 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
           <div className="product-details">
             <div>
               <div className="pname">{item.name}</div>
-              {/* <div className="rating-sec">
-                <div>Rating</div>
-                <div>
-                  <span className="star">&#9733;</span>
-                  <span className="star">&#9733;</span>
-                  <span className="star">&#9733;</span>
-                  <span>&#9733;</span>
-                  <span>&#9733;</span>
-                </div>
-              </div>
-              <div>Rs. 1000</div> */}
               {!ARSupported && <h5>Scan the QR code for AR View on mobile</h5>}
             </div>
-            {/* <button className="add-icon" onClick={handleAddToWishlist}>
-              {isInWishlist ? '-' : '+'}
-            </button> */}
           </div>
         </div>
         

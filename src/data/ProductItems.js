@@ -73,7 +73,7 @@ const productItems = [
     color: "Red",
     annotations: [
       {
-        title: "pot-structure",
+        title: "Wooden-Board",
         slot: "hotspot-1",
          position: "0.008754174027053235m 0.3513235856998005m 0.1658749505478343m",
         normal: "-0.30988561688489596m 0.9507625837296717m -0.004627507703580716m",
