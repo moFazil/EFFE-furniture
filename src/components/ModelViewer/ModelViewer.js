@@ -4,11 +4,9 @@ import LazyLoad from "react-lazyload";
 import QRCode from "qrcode.react";
 import Help from "./Help";
 const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
-  const [selectedVariant, setSelectedVariant] = useState('default');
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
   const [annotate, setAnnotate] = useState(false);
-  const [isInWishlist, setIsInWishlist] = useState(false);
   
   
   let modelViewer1 = {
@@ -37,7 +35,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
 
 
   const handleAnnotateClick = (annotation) => {
-    const { orbit, target, position } = annotation;
+    const { target, position } = annotation;
     model.current.cameraTarget = position;
     model.current.orbit = target
   }
@@ -82,22 +80,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
       modelViewer.variantName = event.target.value === 'Default' ? null : event.target.value;
     });
   }, []);
-   
-  useEffect(() => {
-    if(wishlist){
-    const isInWishlist = wishlist.some((wishlistItem) => wishlistItem.id === item.id);
-    setIsInWishlist(isInWishlist);
-    }
-  }, [item, wishlist]);
-  const handleAddToWishlist = () => {
-    if (isInWishlist) {
-      removeFromWishlist(item.id);
-    } 
-    else 
-    {
-      addToWishlist(item);
-    }
-  };
 
   return (
     <div className="model-view">
@@ -149,7 +131,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
         {annotate && item.annotations.map((annotate, idx) => (
           <button
             key={idx}
-            class="Hotspot"
+            className="Hotspot"
             slot={annotate.slot}
             data-position={annotate.position}
             data-normal={annotate.normal}
@@ -158,16 +140,15 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
             data-visibility-attribute="visible"
             onClick={() => handleAnnotateClick(annotate)}
           >
-            <div class="HotspotAnnotation">{annotate.title}</div>
+            <div className="HotspotAnnotation">{annotate.title}</div>
           </button>
         ))}
         
-        <div class="controls variant_div">
+        <div className="controls variant_div">
           <select ref={varient} id="variant"></select>
         </div>
 
       </model-viewer>
-        
       <LazyLoad>
         {/* Card content below the model-viewer */}
         <div className="qr-sec">
@@ -186,7 +167,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
           <div className="product-details">
             <div>
               <div className="pname">{item.name}</div>
-              <div className="rating-sec">
+              {/* <div className="rating-sec">
                 <div>Rating</div>
                 <div>
                   <span className="star">&#9733;</span>
@@ -196,15 +177,16 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
                   <span>&#9733;</span>
                 </div>
               </div>
-              <div>Rs. 1000</div>
+              <div>Rs. 1000</div> */}
               {!ARSupported && <h5>Scan the QR code for AR View on mobile</h5>}
             </div>
-            <button className="add-icon" onClick={handleAddToWishlist}>
+            {/* <button className="add-icon" onClick={handleAddToWishlist}>
               {isInWishlist ? '-' : '+'}
-            </button>
+            </button> */}
           </div>
         </div>
-      </LazyLoad>
+        
+    </LazyLoad>
     </div>
   );
 };
