@@ -8,8 +8,8 @@ import iospainting from "../assets/models/Painting.usdz";
 // import ioscar1 from "../assets/models/Car1.usdz";
 import OfficeChair from "../assets/models/OfficeChair.glb";
 import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
-// import pot from "../assets/models/pot.glb";
-// import potUsdz from "../assets/models/pot.usdz";
+import desk from "../assets/models/desk_fan_-_household_props_challenge.glb";
+import deskUsdz from "../assets/models/Desk_Fan_-_Household_Props_Challenge.usdz";
 import cupBoard from "../assets/models/Table with texture.glb";
 import cupBoardUsdz from "../assets/models/Table with texture.usdz";
 
@@ -107,31 +107,31 @@ const productItems = [
       },
     ]
   },
-  // {
-  //   id: 5,
-  //   name: "Car",
-  //   modelSrc: car,
-  //   iOSSrc: ioscar,
-  //   category: "Vehicle",
-  //   color: "Blue",
-  //   annotations: [
-  //     {
-  //       title: "plastic-structure",
-  //       slot: "hotspot-1",
-  //       position: "-0.0036662781627494825m 0.11165170707633758m 0.07931578568217246m",
-  //       normal: "-0.007882343763611447m 0.9530143214961644m 0.30282267365571863m",
-  //       orbit: "10.89188deg 119.9775deg 0.03543022m",
-  //       target: "-0.1053838m 0.01610652m 0.1076345m"
-  //     }, {
-  //       title: "glossy-color",
-  //       slot: "hotspot-2",
-  //       position: "-0.09202904871903242m 0.05133736629679797m 0.0013477452825590153m",
-  //       normal: "-0.9976942525197127m 0.061837681663106964m 0.027969261979253417m",
-  //       orbit: "10.89188deg 119.9775deg 0.03543022m",
-  //       target: "-0.1053838m 0.01610652m 0.1076345m"
-  //     },
-  //   ]
-  // },
+  {
+    id: 5,
+    name: "Desk",
+    modelSrc: desk,
+    iOSSrc: deskUsdz,
+    category: "Vehicle",
+    color: "Blue",
+    annotations: [
+      {
+        title: "plastic-structure",
+        slot: "hotspot-1",
+        position: "-0.0036662781627494825m 0.11165170707633758m 0.07931578568217246m",
+        normal: "-0.007882343763611447m 0.9530143214961644m 0.30282267365571863m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      }, {
+        title: "glossy-color",
+        slot: "hotspot-2",
+        position: "-0.09202904871903242m 0.05133736629679797m 0.0013477452825590153m",
+        normal: "-0.9976942525197127m 0.061837681663106964m 0.027969261979253417m",
+        orbit: "10.89188deg 119.9775deg 0.03543022m",
+        target: "-0.1053838m 0.01610652m 0.1076345m"
+      },
+    ]
+  },
   // {
   //   id: 6,
   //   name: "Sport Car",
