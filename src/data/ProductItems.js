@@ -8,6 +8,8 @@ import desk from "../assets/models/desk_fan_-_household_props_challenge.glb";
 import deskUsdz from "../assets/models/Desk_Fan_-_Household_Props_Challenge.usdz";
 import cupBoard from "../assets/models/Table with texture.glb";
 import cupBoardUsdz from "../assets/models/Table with texture.usdz";
+import ArmChair from "../assets/models/arm.glb";
+import ArmChairUsdz from "../assets/models/Arm_chair__Furniture.usdz";
 
 const productItems = [
   {
@@ -81,8 +83,8 @@ const productItems = [
   {
     id: 4,
     name: "Painting",
-    modelSrc: painting,
-    iOSSrc: iospainting,
+    modelSrc: ArmChair,
+    iOSSrc: ArmChairUsdz,
     category: "Art",
     color: "Brown",
     annotations: [
@@ -128,31 +130,5 @@ const productItems = [
       },
     ]
   },
-  // {
-  //   id: 6,
-  //   name: "Sport Car",
-  //   modelSrc: car1,
-  //   iOSSrc: ioscar1,
-  //   category: "Vehicle",
-  //   color: "Red",
-  //   annotations: [
-  //     {
-  //       title: "plastic-structure",
-  //       slot: "hotspot-1",
-  //       position: "0.011597651675006926m 0.5744572599492905m -0.1383899854988515m",
-  //       normal: "0.028332494851243895m 0.2137467602998606m 0.9764781575625839m",
-  //       orbit: "10.89188deg 119.9775deg 0.03543022m",
-  //       target: "-0.1053838m 0.01610652m 0.1076345m"
-  //     }, {
-  //       title: "glossy-color",
-  //       slot: "hotspot-2",
-  //       position: "0.008754174027053235m 0.3513235856998005m 0.1658749505478343m",
-  //       normal: "-0.30988561688489596m 0.9507625837296717m -0.004627507703580716m",
-  //       orbit: "10.89188deg 119.9775deg 0.03543022m",
-  //       target: "-0.1053838m 0.01610652m 0.1076345m"
-  //     },
-  //   ]
-  // },
-  
 ];
 export default productItems;
