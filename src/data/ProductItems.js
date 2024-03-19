@@ -1,7 +1,5 @@
 import sheenchair from "../assets/models/sheenchair.glb";
 import ioschair from "../assets/models/sheenchair.usdz";
-import painting from "../assets/models/Painting.glb";
-import iospainting from "../assets/models/Painting.usdz";
 import OfficeChair from "../assets/models/OfficeChair.glb";
 import OfficeChairUsdz from "../assets/models/OfficeChair.usdz";
 import desk from "../assets/models/desk_fan_-_household_props_challenge.glb";
@@ -82,7 +80,7 @@ const productItems = [
   },
   {
     id: 4,
-    name: "Painting",
+    name: "Arm Chair",
     modelSrc: ArmChair,
     iOSSrc: ArmChairUsdz,
     category: "Art",

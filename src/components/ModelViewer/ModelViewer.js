@@ -93,6 +93,7 @@ const ModelViewer = ({ item}) => {
         ar
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
+        disable-zoom
         auto-rotate
       >
 
