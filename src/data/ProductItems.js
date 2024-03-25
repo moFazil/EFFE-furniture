@@ -105,7 +105,7 @@ const productItems = [
   },
   {
     id: 5,
-    name: "Desk",
+    name: "Fan",
     modelSrc: desk,
     iOSSrc: deskUsdz,
     category: "Vehicle",

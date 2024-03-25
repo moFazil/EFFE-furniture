@@ -95,7 +95,6 @@ const ModelViewer = ({ item}) => {
         camera-controls 
         auto-rotate
       >
-
         {ARSupported && (
           <button slot="ar-button" className="arbutton">
             View in your space
